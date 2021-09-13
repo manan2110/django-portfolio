@@ -48,14 +48,14 @@
                 </span>
             </h1>
             <h2 class="tagline">
-                I am Manan Gyanchandani <span class="emoji technologist"></span>
-                <br />A Web Developer
-                <br />Still Learning ! 😁
+                {{ profile.line1 }} <span class="emoji technologist"></span>
+                <br />{{ profile.line2 }}
+                <br />{{ profile.line3 }} 😁
             </h2>
             <h3 class="contact">
                 <span>Get in touch </span> <span class="emoji pointer"></span>
                 <span>
-                    <a class="maillinks" href="mailto:manan.co.in@gmail.com" target="_blank"
+                    <a class="maillinks" href="{{ profile.email }}" target="_blank"
                         class="highlight-link">manan.co.in@gmail.com</a>
                 </span>
             </h3>
