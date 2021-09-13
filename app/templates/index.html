@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Manan</title>
+    <link rel="icon" type="image/png" href="{% static 'img/emojis/technologist.jpg' %}" hreflang="en-us" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css'  %}" hreflang="en-us" />
+
+</head>
+
+<body>
+    <div class="site">
+        <header class="intro">
+            <h1 class="hello">
+                <div class="avatar">
+                </div>
+
+                <script type="text/javascript" src="{% static 'js/typed.min.js' %}"></script>
+                <span class="typeffect">
+                    <script>
+                        var typed = new Typed('.typeffect', {
+                            strings: [
+                                '',
+                                `print('Hello')`,//Python
+                                `cout&lt;&lt;'Hello'`, //C++
+                                `printf('Hello')`, //C
+                                `System.out.print('Hello')`, //Java
+                                `console.log('Hello')`,//JavaScript
+                                '',
+                                // `echo "Hello World"`//PHP
+                            ],
+                            smartBackspace: true,
+                            typeSpeed: 50,
+                            backSpeed: 0,
+                            startDelay: 0,
+                            loop: true
+                        });
+                    </script>
+                </span>
+            </h1>
+            <h2 class="tagline">
+                I am Manan Gyanchandani <span class="emoji technologist"></span>
+                <br />A Web Developer
+                <br />Still Learning ! 😁
+            </h2>
+            <h3 class="contact">
+                <span>Get in touch </span> <span class="emoji pointer"></span>
+                <span>
+                    <a class="maillinks" href="mailto:manan.co.in@gmail.com" target="_blank"
+                        class="highlight-link">manan.co.in@gmail.com</a>
+                </span>
+            </h3>
+        </header>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+</body>
+
+</html>
