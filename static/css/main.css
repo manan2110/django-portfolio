@@ -1,0 +1,261 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #444452;
+  font-family: Apercu, "Source Sans Pro", system, system-ui, -apple-system,
+    BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.emoji {
+    display: inline-block;
+    vertical-align: text-top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro {
+    padding: 40px 100px;
+    height: 100vh;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: -5px 0px;
+    font-family: 'Trispace', sans-serif;
+
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/emojis/hello.png');
+    background-size: cover;
+}
+
+.hello,
+.tagline {
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hello .emoji,
+.tagline .emoji {
+    width: 40px;
+    height: 40px;
+}
+
+.hello {
+    font-weight: 300;
+}
+
+.contact {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.contact .emoji.pointer {
+    background-image: url(../img/emojis/pointright.png);
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    vertical-align: text-bottom;
+}
+
+.contact .highlight-link {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 3px;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 -3px 0 #007bff;
+    box-shadow: inset 0 -3px 0 #007bff;
+}
+
+.contact .highlight-link:hover {
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -33px 0 0 #007bff;
+    color: #fff;
+}
+
+.technologist {
+    background-image: url(../img/emojis/technologist.png);
+}
+
+@media screen and (max-width: 1024px) {
+    .hello,
+    .tagline {
+        font-size: 2.25rem;
+    }
+    .hello .emoji,
+    .tagline .emoji {
+        width: 35px;
+        height: 35px;
+    }
+    .avatar{
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hello,
+    .tagline {
+        font-size: 1.85rem;
+    }
+    .hello .emoji,
+    .tagline .emoji {
+        width: 30px;
+        height: 30px;
+    }
+    .avatar{
+        width: 260px;
+        height: 260px;
+    }
+    .contact{
+        font-size: 1.2rem;
+        margin-top: -100px;
+    }
+    .tagline{
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .intro {
+        padding: 50px 60px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .intro {
+        padding: 30px 60px;
+    }
+    .contact {
+        font-size: 1rem;
+        margin-top: -200px;
+    }
+    .hello{
+        margin-top: -80px;
+        font-size: 1.7rem;
+    }
+    .tagline {
+        margin-top: -240px;
+    }
+    .avatar{
+        width: 230px;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .intro {
+        padding: 0px 50px;
+    }
+
+    .hello,
+    .tagline {
+        font-size: 1.75rem;
+    }
+    .hello{
+        margin-top: 10px;
+    }
+    .tagline{
+        margin-top: -100px;
+    }
+    .contact {
+        font-size: 1rem;
+        margin-top: -100px;
+    }
+
+    .contact .emoji.pointer {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .intro {
+        padding: 0px 40px;
+    }
+    .hello{
+        font-size: 1.5rem;
+        margin-top: -30px;
+    }
+    .tagline{
+        margin-top: -170px;
+        font-size: 1.4rem;
+    }
+    .contact {
+        margin-top: -140px;
+        font-size: 0.9rem;
+    }
+    .avatar{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .hello .emoji,
+    .tagline .emoji {
+        width: 28px;
+        height: 26px;
+    }
+
+    .hello {
+        font-size: 1.3rem;
+    }
+    
+    .tagline{
+        font-size: 1rem;
+        margin-top: -100px;
+    }
+
+    .avatar{
+        width: 180px;
+        height: 180px;
+    }
+    .contact{
+        font-size: .85rem;
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .intro {
+        padding: 0px 24px;
+    }
+    .hello{
+        font-size: 1.15rem;
+    }
+    .tagline{
+        font-size: 1rem;
+    }
+    .contact{
+        font-size: .85rem;
+    }
+}
