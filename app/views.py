@@ -4,7 +4,7 @@ from .models import *
 
 
 def index(request):
-    # profile = Profile.objects.get(id=1)
-    # dp = DP.objects.get(id=1)
+    profile = Profile.objects.get(id=1)
+    dp = DP.objects.get(id=1)
     # projects = Project.objects.all()
-    return render(request, 'index.html')
+    return render(request, 'index.html', {'profile': profile, 'dp': dp})
